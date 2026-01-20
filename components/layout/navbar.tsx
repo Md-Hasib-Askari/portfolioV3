@@ -10,7 +10,6 @@ import { useEffect, useState } from "react";
 export default function Navbar() {
     const pathname = usePathname();
     const [isHome, setIsHome] = useState(true);
-    const [isHovered, setIsHovered] = useState(false);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -33,12 +32,10 @@ export default function Navbar() {
 
     return (
         <nav
-            className={`bg-transparent fixed top-0 left-0 right-0 transition-all duration-300 ${isHome || isHovered
+            className={`bg-transparent fixed top-0 left-0 right-0 transition-all duration-300 ${isHome
                 ? 'shadow-lg'
-                : 'backdrop-blur-sm'
+                : 'backdrop-blur-sm bg-background/80'
                 }`}
-            onMouseEnter={() => setIsHovered(true)}
-            onMouseLeave={() => setIsHovered(false)}
         >
             <div className={`${sectionStyle} flex flex-row justify-between items-center py-4`}>
                 <div>
