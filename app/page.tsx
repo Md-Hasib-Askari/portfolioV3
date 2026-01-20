@@ -24,8 +24,7 @@ export const scrollToSection = (id: string) => {
 export default function Home() {
   return (
     <>
-      <Navbar />
-      <div className="w-full min-h-screen flex flex-col pt-20" id="home">
+      <div className="w-full min-h-screen flex flex-col" id="home">
         <div className="relative flex-1 flex flex-col overflow-hidden">
           <div className="absolute -inset-2 bg-grid-fade pointer-events-none" />
           <div
@@ -33,9 +32,10 @@ export default function Home() {
           />
           <div className="absolute inset-0 bg-background/40 backdrop-blur-[0.5px]" />
           <div className="relative z-20 flex flex-col flex-1">
+            <Navbar />
             <div className="border-b pb-4"></div>
           </div>
-          <HeroSection className="flex-1 z-20 items-center justify-center" />
+          <HeroSection className="flex-1 z-10 items-center justify-center" />
         </div>
         <TechStackSection />
       </div>
