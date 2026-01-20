@@ -44,7 +44,7 @@ export default function HighlightSection() {
                     />
                 </div>
 
-                <div className="relative overflow-hidden rounded-2xl border border-border/40 min-h-[300px] sm:min-h-[400px] lg:min-h-0">
+                <div className="relative overflow-hidden rounded-2xl border border-border/40 min-h-75 sm:min-h-100 lg:min-h-0">
                     <Image
                         src="/profile.jpg"
                         alt="Profile"
@@ -55,6 +55,36 @@ export default function HighlightSection() {
                     <button className="absolute right-4 top-4 rounded-full bg-orange-500 p-3 text-primary-foreground shadow-lg">
                         <ArrowUpRight className='text-white' />
                     </button>
+                </div>
+            </div>
+
+            <div className="mt-8 sm:mt-12 border border-orange-600/20 rounded-xl p-4 sm:p-6">
+                <h3 className="text-xl sm:text-2xl font-bold mb-4 sm:mb-6 text-orange-500">Education & Achievements</h3>
+
+                <div className="space-y-6">
+                    <div>
+                        <h4 className="text-lg sm:text-xl font-semibold mb-3 sm:mb-4">Education</h4>
+                        <div className="space-y-4">
+                            <div className="border-l-2 border-orange-500 pl-4">
+                                <h5 className="font-semibold text-base sm:text-lg">Bachelor of Science in Computer Science &amp; Engineering</h5>
+                                <p className="text-sm text-muted-foreground">American International University-Bangladesh | 2022 - 2026</p>
+                                <p className="text-sm text-muted-foreground mt-1">CGPA: 3.99/4.0</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h4 className="text-lg sm:text-xl font-semibold mb-3 sm:mb-4">Key Achievements</h4>
+                        <div className="grid gap-3 sm:grid-cols-2">
+                            <div className="flex items-start gap-3 p-3 rounded-lg bg-orange-500/5 border border-orange-500/20">
+                                <div className="w-2 h-2 rounded-full bg-orange-500 mt-2 shrink-0"></div>
+                                <div>
+                                    <p className="font-medium text-sm sm:text-base">Dean's List Recipient</p>
+                                    <p className="text-xs sm:text-sm text-muted-foreground">Maintained academic excellence throughout degree</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
