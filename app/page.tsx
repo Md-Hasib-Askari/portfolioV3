@@ -10,6 +10,17 @@ import Testimonials from "@/components/layout/testimonials";
 
 export const sectionStyle = "max-w-7xl mx-auto w-full flex flex-col px-4";
 
+export const scrollToSection = (id: string) => {
+  const el = document.getElementById(id);
+  if (!el) return;
+
+  el.scrollIntoView({
+    behavior: "smooth",
+    block: "start",
+  });
+};
+
+
 export default function Home() {
   return (
     <>

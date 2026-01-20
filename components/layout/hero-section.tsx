@@ -1,6 +1,8 @@
+'use client';
+
 import { Globe } from 'lucide-react'
 import { Button } from '../ui/button'
-import { sectionStyle } from '@/app/page'
+import { scrollToSection, sectionStyle } from '@/app/page'
 
 export default function HeroSection({ className }: { className?: string }) {
     return (
@@ -15,8 +17,8 @@ export default function HeroSection({ className }: { className?: string }) {
 
 
             <div className="flex flex-row justify-center gap-5 mt-6 ">
-                <Button size='lg' className="flex items-center space-x-2 bg-linear-to-r from-orange-700 to-orange-700/80 text-white hover:animate-pulse">
-                    Projects <Globe />
+                <Button onClick={() => scrollToSection("projects")} size="lg" className="p-2 px-3 rounded-lg flex justify-between gap-2 items-center space-x-2 bg-linear-to-r from-orange-700 to-orange-700/80 text-white hover:animate-pulse">
+                    Projects{' '}<Globe />
                 </Button>
 
                 <Button variant="default" size='lg' className="bg-background text-gray-100 hover:text-gray-700 border border-gray-700 flex items-center space-x-2">

@@ -14,7 +14,7 @@ export default function FaqSection() {
                 Frequently Asked Questions
             </h2>
 
-            <Accordion type="single" collapsible className="space-y-2">
+            <Accordion type="single" collapsible className="space-y-2 w-3xl mx-auto">
                 <FaqItem
                     value="item-1"
                     question="How does your creative process work?"

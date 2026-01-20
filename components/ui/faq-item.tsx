@@ -12,7 +12,7 @@ function FaqItem({
     return (
         <AccordionItem
             value={value}
-            className="border-b border-border/40"
+            className="border-b border-gray-400/40"
         >
             <AccordionTrigger className="py-5 text-left text-base font-medium hover:no-underline">
                 {question}
