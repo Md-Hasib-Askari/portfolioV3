@@ -7,6 +7,10 @@ export default function Footer() {
             <span className='text-gray-400'>
                 &copy; {new Date().getFullYear()} Md Hasib Askari. All rights reserved.
             </span>
+            <br />
+            <span className="mx-2 text-gray-400">
+                Developed with ❤️ using Next.js and Tailwind CSS.
+            </span>
         </footer>
     )
 }

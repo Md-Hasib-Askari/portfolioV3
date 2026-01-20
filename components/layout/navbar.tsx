@@ -70,9 +70,9 @@ export default function Navbar() {
                     </ul>
                 </div>
                 <div className="inline-flex items-center justify-center">
-                    <Button className="bg-background text-gray-100 hover:text-gray-700 border border-gray-700" variant="default" size="sm">
-                        <span className="hidden lg:inline">Get in touch via WhatsApp</span>
-                        <span className="lg:hidden">WhatsApp</span>
+                    <Button onClick={() => window.open("https://www.linkedin.com/in/mdhasibaskari/", "_blank")} className="bg-background text-gray-100 hover:text-gray-700 border border-gray-700" variant="default" size="sm">
+                        <span className="hidden lg:inline">Get in touch via Linkedin</span>
+                        <span className="lg:hidden">Linkedin</span>
                     </Button>
                 </div>
             </div>
