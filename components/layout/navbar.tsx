@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { scrollToSection, sectionStyle } from "@/app/page";
 import { usePathname } from "next/navigation";
 import { GLOBAL_PATHNAMES } from "@/constants/global-pathnames";
-import { useEffect, useState } from "react";
+import { use, useEffect, useState } from "react";
 
 export default function Navbar() {
     const pathname = usePathname();
@@ -13,18 +13,19 @@ export default function Navbar() {
 
     useEffect(() => {
         const handleScroll = () => {
-            const homeSection = document.getElementById('home');
-            if (homeSection) {
-                const rect = homeSection.getBoundingClientRect();
-                setIsHome(rect.bottom > 100);
-            }
+            setIsHome(window.scrollY < 50);
         };
 
-        window.addEventListener('scroll', handleScroll);
+        window.addEventListener('scroll', handleScroll, { passive: true });
         handleScroll();
 
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
+
+    useEffect(() => {
+        console.log("Is home changed", isHome);
+
+    }, [isHome]);
 
     const getActiveLinkStyle = (path: string) => {
         return pathname === path ? 'text-orange-500 cursor-pointer' : 'text-gray-400 cursor-pointer hover:text-orange-500 transition-colors';

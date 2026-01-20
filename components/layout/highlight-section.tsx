@@ -1,7 +1,8 @@
 import Image from 'next/image'
 import { StatCard } from '../ui/stat-card'
 import { sectionStyle } from '@/app/page'
-import { ArrowUpRight } from 'lucide-react'
+import { ArrowUpRight, Circle } from 'lucide-react'
+import { Badge } from '../ui/badge'
 
 export default function HighlightSection() {
     return (
@@ -59,6 +60,84 @@ export default function HighlightSection() {
             </div>
 
             <div className="mt-8 sm:mt-12 border border-orange-600/20 rounded-xl p-4 sm:p-6">
+                <h3 className="text-xl sm:text-2xl font-bold mb-4 sm:mb-6 text-orange-500">Work Experience</h3>
+
+                <div className="space-y-6">
+                    <div className="border-l-2 border-orange-500 pl-4 pb-6">
+                        <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-2 mb-2">
+                            <div>
+                                <h4 className="text-base sm:text-lg font-semibold">Full Stack Software Engineer - Intern</h4>
+                                <p className="text-sm text-orange-500">Deepchain Labs</p>
+                            </div>
+                            <span className="text-xs sm:text-sm text-muted-foreground">Jan 2026 - Present</span>
+                        </div>
+                        <ul className="space-y-2 mt-3 text-xs sm:text-sm text-muted-foreground">
+                            <li className="flex items-center gap-2">
+                                <Circle size={6} className="fill-orange-500 text-orange-500" />
+                                <span>Developed and maintained scalable web applications using React, Next.js, and Node.js</span>
+                            </li>
+                            <li className="flex items-center gap-2">
+                                <Circle size={6} className="fill-orange-500 text-orange-500" />
+                                <span>Collaborated with cross-functional teams to deliver high-quality software solutions</span>
+                            </li>
+                            <li className="flex items-center gap-2">
+                                <Circle size={6} className="fill-orange-500 text-orange-500" />
+                                <span>Implemented responsive UI designs and optimized application performance</span>
+                            </li>
+                            <li className="flex items-center gap-2">
+                                <div className="flex flex-wrap gap-2">
+                                    <Badge variant="outline" className="text-xs sm:text-sm bg-orange-500/10 text-orange-500 rounded-md">React</Badge>
+                                    <Badge variant="outline" className="text-xs sm:text-sm bg-orange-500/10 text-orange-500 rounded-md">Nest.js</Badge>
+                                    <Badge variant="outline" className="text-xs sm:text-sm bg-orange-500/10 text-orange-500 rounded-md">Next.js</Badge>
+                                    <Badge variant="outline" className="text-xs sm:text-sm bg-orange-500/10 text-orange-500 rounded-md">TypeScript</Badge>
+                                    <Badge variant="outline" className="text-xs sm:text-sm bg-orange-500/10 text-orange-500 rounded-md">PostgreSQL</Badge>
+                                    <Badge variant="outline" className="text-xs sm:text-sm bg-orange-500/10 text-orange-500 rounded-md">Tailwind CSS</Badge>
+                                    <Badge variant="outline" className="text-xs sm:text-sm bg-orange-500/10 text-orange-500 rounded-md">Shadcn/UI</Badge>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div className="border-l-2 border-orange-500/60 pl-4 pb-6">
+                        <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-2 mb-2">
+                            <div>
+                                <h4 className="text-base sm:text-lg font-semibold">Software Engineer Intern</h4>
+                                <p className="text-sm text-orange-500">TS4U - Dhaka, Bangladesh</p>
+                            </div>
+                            <span className="text-xs sm:text-sm text-muted-foreground">Aug 2024 - Jan 2025</span>
+                        </div>
+                        <ul className="space-y-2 mt-3 text-xs sm:text-sm text-muted-foreground">
+                            <li className="flex items-center gap-2">
+                                <Circle size={6} className="fill-orange-500 text-orange-500" />
+                                <span>Built CRM communication modules integrating <strong>Facebook, RingCentral, and LinkedIn APIs</strong>, consolidating multi-channel messaging into a <strong>unified workflow</strong>.</span>
+                            </li>
+                            <li className="flex items-center gap-2">
+                                <Circle size={6} className="fill-orange-500 text-orange-500" />
+                                <span>Optimized <strong>RESTful APIs and MongoDB schemas</strong>, improving query performance and reducing latency.</span>
+                            </li>
+                            <li className="flex items-center gap-2">
+                                <Circle size={6} className="fill-orange-500 text-orange-500" />
+                                <span>Built CRM automation (workflows, autodialer, lead scoring) reducing manual effort by ~40%.</span>
+                            </li>
+                            <li className="flex items-center gap-2">
+                                <div className="flex flex-wrap gap-2">
+                                    <Badge variant="outline" className="text-xs sm:text-sm bg-orange-500/10 text-orange-500 rounded-md">React</Badge>
+                                    <Badge variant="outline" className="text-xs sm:text-sm bg-orange-500/10 text-orange-500 rounded-md">Express.js</Badge>
+                                    <Badge variant="outline" className="text-xs sm:text-sm bg-orange-500/10 text-orange-500 rounded-md">Next.js</Badge>
+                                    <Badge variant="outline" className="text-xs sm:text-sm bg-orange-500/10 text-orange-500 rounded-md">JavaScript</Badge>
+                                    <Badge variant="outline" className="text-xs sm:text-sm bg-orange-500/10 text-orange-500 rounded-md">MongoDB</Badge>
+                                    <Badge variant="outline" className="text-xs sm:text-sm bg-orange-500/10 text-orange-500 rounded-md">Tailwind CSS</Badge>
+                                    <Badge variant="outline" className="text-xs sm:text-sm bg-orange-500/10 text-orange-500 rounded-md">Antd UI Library</Badge>
+                                    <Badge variant="outline" className="text-xs sm:text-sm bg-orange-500/10 text-orange-500 rounded-md">Docker</Badge>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+            <div className="mt-8 sm:mt-12 border border-orange-600/20 rounded-xl p-4 sm:p-6">
                 <h3 className="text-xl sm:text-2xl font-bold mb-4 sm:mb-6 text-orange-500">Education & Achievements</h3>
 
                 <div className="space-y-6">
@@ -76,8 +155,8 @@ export default function HighlightSection() {
                     <div>
                         <h4 className="text-lg sm:text-xl font-semibold mb-3 sm:mb-4">Key Achievements</h4>
                         <div className="grid gap-3 sm:grid-cols-2">
-                            <div className="flex items-start gap-3 p-3 rounded-lg bg-orange-500/5 border border-orange-500/20">
-                                <div className="w-2 h-2 rounded-full bg-orange-500 mt-2 shrink-0"></div>
+                            <div className="flex items-center gap-3 p-3 rounded-lg bg-orange-500/5 border border-orange-500/20">
+                                <Circle size={10} className="fill-orange-500 text-orange-500" />
                                 <div>
                                     <p className="font-medium text-sm sm:text-base">Dean's List Recipient</p>
                                     <p className="text-xs sm:text-sm text-muted-foreground">Maintained academic excellence throughout degree</p>
