@@ -1,3 +1,6 @@
+import { Github, Linkedin } from "lucide-react";
+import Link from "next/link";
+
 export default function Footer() {
     return (
         <footer className="max-w-7xl mx-auto text-center my-10">
