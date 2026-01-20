@@ -1,5 +1,4 @@
 import { sectionStyle } from '@/app/page'
-import React from 'react'
 
 export default function ContactSection() {
     return (
