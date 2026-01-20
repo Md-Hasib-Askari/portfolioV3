@@ -6,7 +6,7 @@ import { ProjectCard } from '../ui/project-card'
 
 export default function ProjectsSection() {
     return (
-        <section className={`${sectionStyle} mt-10 mb-10`} id="projects">
+        <section className={`${sectionStyle} py-15`} id="projects">
             <h2 className="text-2xl font-bold mb-6 text-center">Projects</h2>
             <div className="grid grid-cols-2 gap-6">
                 <ProjectCard
