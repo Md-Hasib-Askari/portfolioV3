@@ -8,7 +8,6 @@ export default function HighlightSection() {
         <section className={`relative ${sectionStyle} px-4 sm:px-6 py-10 sm:py-15`} id="about">
             <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_center,oklch(var(--primary)/0.15),transparent_70%)] blur-3xl" />
 
-            {/* About Me Header */}
             <div className="mb-6 sm:mb-8">
                 <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-3 sm:mb-4">About Me</h2>
                 <div className="space-y-2 sm:space-y-3">

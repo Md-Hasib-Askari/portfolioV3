@@ -8,7 +8,7 @@ export default function HeroSection({ className }: { className?: string }) {
     return (
         <section className={`${sectionStyle} justify-center items-center text-center px-4 ${className}`}>
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold bg-linear-to-r from-foreground to-orange-500/90 bg-clip-text text-transparent">
-                Software Engineer (Full Stack)
+                Software Engineer <br className='lg:hidden' />(Full Stack)
             </h1>
 
             <p className="max-w-5xl mx-auto text-center mt-4 text-sm sm:text-base lg:text-lg text-gray-500 px-4">
