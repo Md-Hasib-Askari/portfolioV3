@@ -1,14 +1,11 @@
 import { sectionStyle } from '@/app/page'
-import React from 'react'
-import { AspectRatio } from '../ui/aspect-ratio'
-import Image from 'next/image'
 import { ProjectCard } from '../ui/project-card'
 
 export default function ProjectsSection() {
     return (
-        <section className={`${sectionStyle} py-15`} id="projects">
-            <h2 className="text-2xl font-bold mb-6 text-center">Projects</h2>
-            <div className="grid grid-cols-2 gap-6">
+        <section className={`${sectionStyle} py-10 sm:py-15 px-4`} id="projects">
+            <h2 className="text-xl sm:text-2xl font-bold mb-4 sm:mb-6 text-center">Projects</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
                 <ProjectCard
                     title="Project 1"
                     description="Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do eiusmod tempor."

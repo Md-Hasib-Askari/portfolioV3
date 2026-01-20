@@ -38,10 +38,10 @@ const testimonials: Testimonial[] = [
 
 function TestimonialsSection() {
     return (
-        <section className={`relative ${sectionStyle} px-6 py-24`} id="testimonials">
-            <div className="mb-12 flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
-                <h2 className="text-2xl font-semibold">Testimonials</h2>
-                <p className="max-w-md text-sm text-muted-foreground">
+        <section className={`relative ${sectionStyle} px-4 sm:px-6 py-12 sm:py-24`} id="testimonials">
+            <div className="mb-8 sm:mb-12 flex flex-col gap-3 sm:gap-4 md:flex-row md:items-center md:justify-between">
+                <h2 className="text-xl sm:text-2xl font-semibold">Testimonials</h2>
+                <p className="max-w-md text-xs sm:text-sm text-muted-foreground">
                     Feedback from clients, partners and colleagues who have experienced my
                     professional journey.
                 </p>

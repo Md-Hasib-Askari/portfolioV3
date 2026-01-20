@@ -9,12 +9,12 @@ import FaqItem from "../ui/faq-item";
 
 export default function FaqSection() {
     return (
-        <section className={`relative ${sectionStyle} px-6 py-20`} id="faq">
-            <h2 className="mb-12 text-center text-2xl font-semibold">
+        <section className={`relative ${sectionStyle} px-4 sm:px-6 py-12 sm:py-20`} id="faq">
+            <h2 className="mb-8 sm:mb-12 text-center text-xl sm:text-2xl font-semibold">
                 Frequently Asked Questions
             </h2>
 
-            <Accordion type="single" collapsible className="space-y-2 w-3xl mx-auto">
+            <Accordion type="single" collapsible className="space-y-2 max-w-3xl w-full mx-auto">
                 <FaqItem
                     value="item-1"
                     question="How does your creative process work?"
