@@ -3,7 +3,7 @@ import { ProjectCard } from '../ui/project-card'
 
 export default function ProjectsSection() {
     return (
-        <section className={`${sectionStyle} py-10 sm:py-15 px-4`} id="projects">
+        <section className={`${sectionStyle} py-10 sm:py-20 px-4`} id="projects">
             <h2 className="text-xl sm:text-2xl font-bold mb-4 sm:mb-6 text-center">Projects</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
                 <ProjectCard

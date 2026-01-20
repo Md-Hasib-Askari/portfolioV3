@@ -5,7 +5,7 @@ import { ArrowUpRight } from 'lucide-react'
 
 export default function HighlightSection() {
     return (
-        <section className={`relative ${sectionStyle} px-4 sm:px-6 py-10 sm:py-15`} id="about">
+        <section className={`relative ${sectionStyle} px-4 sm:px-6 py-10 sm:py-20`} id="about">
             <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_center,oklch(var(--primary)/0.15),transparent_70%)] blur-3xl" />
 
             <div className="mb-6 sm:mb-8">
