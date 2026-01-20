@@ -1,30 +1,64 @@
-import { AspectRatio } from '@radix-ui/react-aspect-ratio'
 import Image from 'next/image'
+import { StatCard } from '../ui/stat-card'
 import { sectionStyle } from '@/app/page'
+import { ArrowUpRight } from 'lucide-react'
 
 export default function HighlightSection() {
     return (
-        <section className={`${sectionStyle} rounded-lg`}>
-            <div className="mx-4 border rounded-lg p-6 flex flex-row text-center gap-4">
-                <div className="flex flex-col gap-6 justify-center items-center w-3/5 text-lg font-medium">
-                    <div className="flex flex-row gap-4 w-full">
-                        <div className="border w-full">+1 Years of Experience</div>
-                        <div className="border w-full">+5 Projects Completed</div>
-                    </div>
-                    <div className="border w-full rounded-lg">+8 Certificates</div>
+        <section className={`relative ${sectionStyle} px-6 py-15`} id="about">
+            <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_center,oklch(var(--primary)/0.15),transparent_70%)] blur-3xl" />
+
+            {/* About Me Header */}
+            <div className="mb-8">
+                <h2 className="text-4xl font-bold mb-4">About Me</h2>
+                <div className="space-y-3">
+                    <h3 className="text-2xl font-semibold text-orange-500">Md Hasib Askari</h3>
+                    <p className="text-lg text-muted-foreground max-w-3xl">
+                        A passionate Full Stack Software Engineer dedicated to crafting elegant solutions to complex problems.
+                        I specialize in building modern web applications with clean code, intuitive interfaces, and robust architectures.
+                        My journey in software development is driven by curiosity, continuous learning, and a commitment to delivering
+                        exceptional digital experiences.
+                    </p>
                 </div>
-                <div className="flex justify-center items-center w-2/5">
-                    <AspectRatio ratio={3 / 1}>
-                        <Image
-                            src="/logo.svg"
-                            alt="Clients"
-                            // width={300}
-                            // height={100}
-                            fill
+            </div>
+
+            <div className="grid gap-6 lg:grid-cols-[1.2fr_1fr] border border-orange-600/20 rounded-xl p-5">
+                <div className="grid gap-6">
+                    <div className="grid gap-6 sm:grid-cols-2">
+                        <StatCard
+                            value="+1 Years"
+                            title="Experience"
+                            description="1 year of experience in front-end development, creating interfaces"
                         />
-                    </AspectRatio>
+                        <StatCard
+                            value="+110"
+                            title="Projects"
+                            description="+110 projects developed for professional improvement"
+                        />
+                    </div>
+
+                    <StatCard
+                        value="+20"
+                        title="Certifications"
+                        description="+20 certifications proving my experience and dedication to my career and future!"
+                        className="h-full"
+                    />
+                </div>
+
+                <div className="relative overflow-hidden rounded-2xl border border-border/40">
+                    <Image
+                        src="/profile.jpg"
+                        alt="Profile"
+                        className="h-full w-full object-cover grayscale"
+                        fill
+                    />
+
+                    <button className="absolute right-4 top-4 rounded-full bg-orange-500 p-3 text-primary-foreground shadow-lg">
+                        <ArrowUpRight className='text-white' />
+                    </button>
                 </div>
             </div>
         </section>
+
     )
 }

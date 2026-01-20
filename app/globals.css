@@ -124,8 +124,53 @@
   body {
     @apply bg-background text-foreground;
   }
+
+  button {
+    @apply cursor-pointer;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
 }
 
-body {
-  font-family: var(--font-sans);
+@layer components {
+  /* .bg-grid-fade {
+    background-color: oklch(var(--background));
+    background-image:
+      linear-gradient(to right, oklch(var(--foreground) / 0.06) 1px, transparent 1px),
+      linear-gradient(to bottom, oklch(var(--foreground) / 0.06) 1px, transparent 1px),
+      radial-gradient(circle at center, transparent 0%, oklch(var(--background)) 70%);
+    background-size: 160px 160px;
+  } */
+
+  .bg-grid-fade {
+    /* background-color: white; */
+    background-image:
+      linear-gradient(to right, var(--color-orange-700) 0.3px, transparent 0.5px),
+      linear-gradient(to bottom, var(--color-orange-700) 0.3px, transparent 0.5px);
+    /* radial-gradient(circle at center, transparent 0%, var(--background) 20%); */
+    background-size: 150px 150px;
+    /* z-index: -999; */
+  }
+
+  .radial-glow {
+    position: absolute;
+    /* inset: -6px -18px; */
+    /* z-index: -1; */
+    border-radius: 9999px;
+
+    background: radial-gradient(ellipse at center,
+        var(--color-orange-700) 0%,
+        transparent 70%);
+
+    filter: blur(30px);
+    opacity: 0.6;
+    transform: rotate(-30deg);
+    pointer-events: none;
+    width: 900px;
+    height: 500px;
+  }
+
 }

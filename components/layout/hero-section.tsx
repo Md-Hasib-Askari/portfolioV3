@@ -2,40 +2,27 @@ import { Globe } from 'lucide-react'
 import { Button } from '../ui/button'
 import { sectionStyle } from '@/app/page'
 
-export default function HeroSection() {
+export default function HeroSection({ className }: { className?: string }) {
     return (
-        <section className={`${sectionStyle} flex-1 justify-center items-center text-center`}>
-            <h1 className="text-3xl font-bold text-center mt-10">
+        <section className={`${sectionStyle} justify-center items-center text-center ${className}`}>
+            <h1 className="text-6xl font-bold bg-linear-to-r from-foreground to-orange-500/90 bg-clip-text text-transparent">
                 Software Engineer (Full Stack)
             </h1>
-            <p className="max-w-3xl mx-auto text-center mt-4 text-lg text-gray-500">
+
+            <p className="max-w-5xl mx-auto text-center mt-4 text-lg text-gray-500">
                 Building high-quality software that balances aesthetics, performance, and solid engineering practices, with a strong focus on creating scalable, accessible, and impactful digital experiences.
             </p>
 
 
             <div className="flex flex-row justify-center gap-5 mt-6 ">
-                <Button className="flex items-center space-x-2">
+                <Button size='lg' className="flex items-center space-x-2 bg-linear-to-r from-orange-700 to-orange-700/80 text-white hover:animate-pulse">
                     Projects <Globe />
                 </Button>
 
-                <Button variant="outline" className="flex items-center space-x-2">
+                <Button variant="default" size='lg' className="bg-background text-gray-100 hover:text-gray-700 border border-gray-700 flex items-center space-x-2">
                     Find out more
                 </Button>
             </div>
-
-            <section className={`${sectionStyle} mb-10 mt-10`}>
-                <span className="pl-10">Technologies I Use</span>
-                <div className="grid grid-cols-4 gap-4 mt-4">
-                    <div className="p-4 border rounded-lg text-center">React</div>
-                    <div className="p-4 border rounded-lg text-center">Next.js</div>
-                    <div className="p-4 border rounded-lg text-center">Node.js</div>
-                    <div className="p-4 border rounded-lg text-center">TypeScript</div>
-                    <div className="p-4 border rounded-lg text-center">Python</div>
-                    <div className="p-4 border rounded-lg text-center">Django</div>
-                    <div className="p-4 border rounded-lg text-center">GraphQL</div>
-                    <div className="p-4 border rounded-lg text-center">Docker</div>
-                </div>
-            </section>
         </section>
     )
 }

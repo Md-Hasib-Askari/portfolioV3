@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Syne, Syne_Mono } from "next/font/google";
+import "devicon/devicon.min.css";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 
