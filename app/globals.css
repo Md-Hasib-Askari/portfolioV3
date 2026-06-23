@@ -148,8 +148,8 @@
   .bg-grid-fade {
     /* background-color: white; */
     background-image:
-      linear-gradient(to right, var(--color-orange-700) 0.3px, transparent 0.5px),
-      linear-gradient(to bottom, var(--color-orange-700) 0.3px, transparent 0.5px);
+      linear-gradient(to right, oklch(1 0 0 / 4%) 0.5px, transparent 0.5px),
+      linear-gradient(to bottom, oklch(1 0 0 / 4%) 0.5px, transparent 0.5px);
     /* radial-gradient(circle at center, transparent 0%, var(--background) 20%); */
     background-size: 150px 150px;
     /* z-index: -999; */
@@ -162,11 +162,11 @@
     border-radius: 9999px;
 
     background: radial-gradient(ellipse at center,
-        var(--color-orange-700) 0%,
+        theme(colors.orange.500) 0%,
         transparent 70%);
 
     filter: blur(30px);
-    opacity: 0.6;
+    opacity: 0.35;
     transform: rotate(-30deg);
     pointer-events: none;
     width: 900px;

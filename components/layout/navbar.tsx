@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { scrollToSection, sectionStyle } from "@/app/page";
 import { usePathname } from "next/navigation";
 import { GLOBAL_PATHNAMES } from "@/constants/global-pathnames";
-import { use, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function Navbar() {
     const pathname = usePathname();
@@ -21,11 +21,6 @@ export default function Navbar() {
 
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
-
-    useEffect(() => {
-        console.log("Is home changed", isHome);
-
-    }, [isHome]);
 
     const getActiveLinkStyle = (path: string) => {
         return pathname === path ? 'text-orange-500 cursor-pointer' : 'text-gray-400 cursor-pointer hover:text-orange-500 transition-colors';
@@ -71,7 +66,7 @@ export default function Navbar() {
                     </ul>
                 </div>
                 <div className="inline-flex items-center justify-center">
-                    <Button onClick={() => window.open("https://www.linkedin.com/in/mdhasibaskari/", "_blank")} className="bg-background text-gray-100 hover:text-gray-700 border border-gray-700" variant="default" size="sm">
+                    <Button onClick={() => window.open("https://www.linkedin.com/in/mdhasibaskari/", "_blank")} className="bg-background text-foreground hover:text-muted-foreground border border-border" variant="default" size="sm">
                         <span className="hidden lg:inline">Get in touch via Linkedin</span>
                         <span className="lg:hidden">Linkedin</span>
                     </Button>

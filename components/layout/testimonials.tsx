@@ -13,26 +13,23 @@ const testimonials: Testimonial[] = [
     {
         rating: 4,
         quote:
-            "Migrar para a TechBank foi a melhor decisão que tomamos. Ganhamos agilidade e tranquilidade no dia a dia.",
-        name: "Jorge Washington",
-        role: "Front-end Developer",
-        avatar: "/avatars/jorge.png",
+            "Hasib is one of the most dedicated engineers I've worked with. He picked up our stack quickly and delivered clean, well-structured code from day one.",
+        name: "Team Lead",
+        role: "Deepchain Labs",
     },
     {
         rating: 5,
         quote:
-            "Nunca pensei que abrir uma conta seria tão rápido. Em menos de 5 minutos já estava com tudo funcionando.",
-        name: "Mariana Silva",
-        role: "Tech Lead",
-        avatar: "/avatars/mariana.png",
+            "He built our CRM communication modules integrating multiple APIs with minimal guidance. Reliable, fast, and always open to feedback.",
+        name: "Engineering Manager",
+        role: "TS4U",
     },
     {
         rating: 3,
         quote:
-            "O app é super intuitivo e fácil de usar. Consigo pagar minhas contas, acompanhar meus gastos e ainda investir.",
-        name: "Lucas Andrade",
-        role: "UI/UX Designer",
-        avatar: "/avatars/lucas.png",
+            "A sharp developer with a great eye for UI detail. Hasib consistently goes beyond the brief and thinks about the end user.",
+        name: "Colleague",
+        role: "Full Stack Engineer",
     },
 ];
 

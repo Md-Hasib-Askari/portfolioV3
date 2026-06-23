@@ -7,7 +7,7 @@ import { Badge } from '../ui/badge'
 export default function HighlightSection() {
     return (
         <section className={`relative ${sectionStyle} px-4 sm:px-6 py-10 sm:py-20`} id="about">
-            <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_center,oklch(var(--primary)/0.15),transparent_70%)] blur-3xl" />
+            <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_center,theme(colors.orange.500/10%),transparent_70%)] blur-3xl" />
 
             <div className="mb-6 sm:mb-8">
                 <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-3 sm:mb-4">About Me</h2>
@@ -22,32 +22,32 @@ export default function HighlightSection() {
                 </div>
             </div>
 
-            <div className="grid gap-4 sm:gap-6 lg:grid-cols-[1.2fr_1fr] border border-orange-600/20 rounded-xl p-3 sm:p-5">
+            <div className="grid gap-4 sm:gap-6 lg:grid-cols-[1.2fr_1fr] border border-orange-500/20 rounded-xl p-3 sm:p-5">
                 <div className="grid gap-4 sm:gap-6">
                     <div className="grid gap-6 sm:grid-cols-2">
                         <StatCard
-                            value="+1 Years"
-                            title="Experience"
-                            description="1 year of experience in front-end development, creating interfaces"
+                            value="3.99"
+                            title="CGPA"
+                            description="Academic excellence at AIUB, Dean's List recipient throughout the degree"
                         />
                         <StatCard
-                            value="+110"
-                            title="Projects"
-                            description="+110 projects developed for professional improvement"
+                            value="+20"
+                            title="Certifications"
+                            description="Professional certifications across full stack, cloud, and software engineering"
                         />
                     </div>
 
                     <StatCard
-                        value="+20"
-                        title="Certifications"
-                        description="+20 certifications proving my experience and dedication to my career and future!"
+                        value="2"
+                        title="Internships"
+                        description="Full Stack Engineer at Deepchain Labs and TS4U, building production-grade systems"
                         className="h-full"
                     />
                 </div>
 
                 <div className="relative overflow-hidden rounded-2xl border border-border/40 min-h-75 sm:min-h-100 lg:min-h-0">
                     <Image
-                        src="/profile.jpg"
+                        src="/profile.png"
                         alt="Profile"
                         className="h-full w-full object-cover grayscale"
                         fill
@@ -59,7 +59,7 @@ export default function HighlightSection() {
                 </div>
             </div>
 
-            <div className="mt-8 sm:mt-12 border border-orange-600/20 rounded-xl p-4 sm:p-6">
+            <div className="mt-8 sm:mt-12 border border-orange-500/20 rounded-xl p-4 sm:p-6">
                 <h3 className="text-xl sm:text-2xl font-bold mb-4 sm:mb-6 text-orange-500">Work Experience</h3>
 
                 <div className="space-y-6">
@@ -137,8 +137,8 @@ export default function HighlightSection() {
                 </div>
             </div>
 
-            <div className="mt-8 sm:mt-12 border border-orange-600/20 rounded-xl p-4 sm:p-6">
-                <h3 className="text-xl sm:text-2xl font-bold mb-4 sm:mb-6 text-orange-500">Education & Achievements</h3>
+            <div className="mt-8 sm:mt-12 border border-orange-500/20 rounded-xl p-4 sm:p-6">
+                <h3 className="text-xl sm:text-2xl font-bold mb-4 sm:mb-6 text-orange-500">Education &amp; Achievements</h3>
 
                 <div className="space-y-6">
                     <div>

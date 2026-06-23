@@ -8,7 +8,7 @@ import ProjectsSection from "@/components/layout/projects-section";
 import TechStackSection from "@/components/layout/tech-stack";
 import Testimonials from "@/components/layout/testimonials";
 
-export const sectionStyle = "max-w-7xl mx-auto w-full flex flex-col px-4";
+export const sectionStyle = "max-w-5xl mx-auto w-full flex flex-col px-4";
 
 export const scrollToSection = (id: string) => {
   const el = document.getElementById(id);
