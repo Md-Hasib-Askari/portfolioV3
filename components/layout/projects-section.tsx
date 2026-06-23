@@ -12,6 +12,7 @@ export default function ProjectsSection() {
                     image="/project-images/p1.png"
                     year="2025"
                     tags={[".NET", "PostgreSQL", "Docker", "JWT"]}
+                    githubUrl="https://github.com/Md-Hasib-Askari/LearnSpace"
                 />
                 <ProjectCard
                     title="AsterSupportAgent"
@@ -19,6 +20,7 @@ export default function ProjectsSection() {
                     image="/project-images/p2.png"
                     year="2025"
                     tags={[".NET", "AI/LLM", "Ollama", "REST API"]}
+                    githubUrl="https://github.com/Md-Hasib-Askari/AsterSupportAgent"
                 />
                 <ProjectCard
                     title="Docten"
@@ -26,6 +28,7 @@ export default function ProjectsSection() {
                     image="/project-images/p3.png"
                     year="2024"
                     tags={["Next.js", "Express", "MongoDB", "TypeScript"]}
+                    githubUrl="https://github.com/Md-Hasib-Askari/docten"
                 />
                 <ProjectCard
                     title="Foodio"
@@ -33,6 +36,7 @@ export default function ProjectsSection() {
                     image="/project-images/p4.png"
                     year="2024"
                     tags={["NestJS", "Next.js", "PostgreSQL", "TypeScript"]}
+                    githubUrl="https://github.com/Md-Hasib-Askari/foodio"
                 />
             </div>
         </section>

@@ -3,12 +3,16 @@ import { Badge } from "@/components/ui/badge";
 import { ExternalLink, Github } from "lucide-react";
 import Image from "next/image";
 
+import Link from "next/link";
+
 type ProjectCardProps = {
     title: string;
     description: string;
     image: string;
     year: string;
     tags: string[];
+    githubUrl?: string;
+    liveUrl?: string;
 };
 
 export function ProjectCard({
@@ -17,6 +21,8 @@ export function ProjectCard({
     image,
     year,
     tags,
+    githubUrl,
+    liveUrl,
 }: ProjectCardProps) {
     return (
         <Card className="group relative overflow-hidden rounded-2xl border border-border/40 bg-background/60 backdrop-blur transition hover:shadow-lg">
@@ -52,12 +58,16 @@ export function ProjectCard({
                 </div>
 
                 <div className="flex items-center gap-3 pt-2">
-                    <button className="text-muted-foreground hover:text-foreground transition">
-                        <ExternalLink size={16} />
-                    </button>
-                    <button className="text-muted-foreground hover:text-foreground transition">
-                        <Github size={16} />
-                    </button>
+                    {liveUrl && (
+                        <Link href={liveUrl} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition">
+                            <ExternalLink size={16} />
+                        </Link>
+                    )}
+                    {githubUrl && (
+                        <Link href={githubUrl} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition">
+                            <Github size={16} />
+                        </Link>
+                    )}
                 </div>
             </CardContent>
         </Card>
