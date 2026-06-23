@@ -1,6 +1,5 @@
 import { sectionStyle } from '@/app/page'
 import { ProjectCard } from '../ui/project-card'
-
 export default function ProjectsSection() {
     return (
         <section className={`${sectionStyle} py-10 sm:py-20 px-4`} id="projects">
@@ -9,23 +8,20 @@ export default function ProjectsSection() {
                 <ProjectCard
                     title="LearnSpace"
                     description="An ASP.NET Core Web API for managing online courses, lessons, quizzes, and student progress with JWT auth and role-based access control."
-                    image="/project-images/p1.png"
-                    year="2025"
+                    year="2026"
                     tags={[".NET", "PostgreSQL", "Docker", "JWT"]}
                     githubUrl="https://github.com/Md-Hasib-Askari/LearnSpace"
                 />
                 <ProjectCard
                     title="AsterSupportAgent"
                     description="An AI-powered customer support chatbot for an online clothing store, featuring an agentic tool-calling loop with LLM integration."
-                    image="/project-images/p2.png"
-                    year="2025"
+                    year="2026"
                     tags={[".NET", "AI/LLM", "Ollama", "REST API"]}
                     githubUrl="https://github.com/Md-Hasib-Askari/AsterSupportAgent"
                 />
                 <ProjectCard
                     title="Docten"
                     description="A full-stack medical practice management system for doctors to manage patients, appointments, prescriptions, and staff efficiently."
-                    image="/project-images/p3.png"
                     year="2024"
                     tags={["Next.js", "Express", "MongoDB", "TypeScript"]}
                     githubUrl="https://github.com/Md-Hasib-Askari/docten"
@@ -33,8 +29,7 @@ export default function ProjectsSection() {
                 <ProjectCard
                     title="Foodio"
                     description="A full-stack food ordering platform with NestJS backend, Next.js frontend, user/auth, admin panel, and order processing."
-                    image="/project-images/p4.png"
-                    year="2024"
+                    year="2026"
                     tags={["NestJS", "Next.js", "PostgreSQL", "TypeScript"]}
                     githubUrl="https://github.com/Md-Hasib-Askari/foodio"
                 />
