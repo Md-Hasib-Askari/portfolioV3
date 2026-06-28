@@ -18,6 +18,7 @@ export default function ProjectsSection() {
                     year="2026"
                     tags={[".NET", "AI/LLM", "Ollama", "REST API"]}
                     githubUrl="https://github.com/Md-Hasib-Askari/AsterSupportAgent"
+                    liveUrl="https://aster-agent.vercel.app/"
                 />
                 <ProjectCard
                     title="Docten"
