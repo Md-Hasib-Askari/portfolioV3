@@ -6,6 +6,13 @@ export default function ProjectsSection() {
             <h2 className="text-xl sm:text-2xl font-bold mb-4 sm:mb-6 text-center">Projects</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
                 <ProjectCard
+                  title="TenantFlow"
+                  description="Multi-tenant SaaS starter kit built with .NET 10, Clean Architecture, EF Core, PostgreSQL, and Redis. Features tenant isolation, JWT auth, soft deletes, audit trails, and RLS."
+                  year="2026"
+                  tags={[".NET", "PostgreSQL", "Redis", "JWT", "Docker", "EF Core"]}
+                  githubUrl="https://github.com/Md-Hasib-Askari/TenantFlow"
+                />
+                <ProjectCard
                     title="LearnSpace"
                     description="An ASP.NET Core Web API for managing online courses, lessons, quizzes, and student progress with JWT auth and role-based access control."
                     year="2026"
@@ -33,13 +40,6 @@ export default function ProjectsSection() {
                     year="2026"
                     tags={["NestJS", "Next.js", "PostgreSQL", "TypeScript"]}
                     githubUrl="https://github.com/Md-Hasib-Askari/foodio"
-                />
-                <ProjectCard
-                    title="TenantFlow"
-                    description="Multi-tenant SaaS starter kit built with .NET 10, Clean Architecture, EF Core, PostgreSQL, and Redis. Features tenant isolation, JWT auth, soft deletes, audit trails, and RLS."
-                    year="2026"
-                    tags={[".NET", "PostgreSQL", "Redis", "JWT", "Docker", "EF Core"]}
-                    githubUrl="https://github.com/Md-Hasib-Askari/TenantFlow"
                 />
             </div>
         </section>
