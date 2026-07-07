@@ -34,6 +34,13 @@ export default function ProjectsSection() {
                     tags={["NestJS", "Next.js", "PostgreSQL", "TypeScript"]}
                     githubUrl="https://github.com/Md-Hasib-Askari/foodio"
                 />
+                <ProjectCard
+                    title="TenantFlow"
+                    description="Multi-tenant SaaS starter kit built with .NET 10, Clean Architecture, EF Core, PostgreSQL, and Redis. Features tenant isolation, JWT auth, soft deletes, audit trails, and RLS."
+                    year="2026"
+                    tags={[".NET", "PostgreSQL", "Redis", "JWT", "Docker", "EF Core"]}
+                    githubUrl="https://github.com/Md-Hasib-Askari/TenantFlow"
+                />
             </div>
         </section>
     )
