@@ -158,8 +158,8 @@ export default function HighlightSection() {
               <div className="flex items-center gap-3 p-3 rounded-lg bg-orange-500/5 border border-orange-500/20">
                 <Circle size={10} className="fill-orange-500 text-orange-500" />
                 <div>
-                  <p className="font-medium text-sm sm:text-base">Dean's List Recipient (Fall 2023-24 | Spring 2023-24 | Fall 2024-25 | Spring 2024-25 | Fall 2025-26)</p>
-                  <p className="text-xs sm:text-sm text-muted-foreground">Maintained academic excellence throughout degree</p>
+                  <p className="font-medium text-sm sm:text-base">Dean's List Recipient</p>
+                  <p className="text-xs sm:text-sm text-muted-foreground">Maintained academic excellence throughout degree (Fall 2023-24 | Spring 2023-24 | Fall 2024-25 | Spring 2024-25 | Fall 2025-26)</p>
                 </div>
               </div>
             </div>
